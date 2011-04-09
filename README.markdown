@@ -15,8 +15,8 @@ A template documentor for ExpressionEngine 2
 
 		{!#--
 			Displays the currently viewed news article.
-			@tag {exp:channel:entries} that holds the news articles
-			@param url channel that holds the news articles
+			@tag {exp:channel:entries} 
+			@param channel channel that holds the news articles
 		--#}
 		{exp:channel:entries channel="news" limit="1"} 
 			{title}
