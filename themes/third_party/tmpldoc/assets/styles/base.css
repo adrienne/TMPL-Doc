@@ -1,0 +1,240 @@
+body {
+	line-height:normal;
+	background: #ECF1F4; /*url(../images/bg.jpg) repeat*/
+	color: #333;
+}
+
+#doc-wrapper a {
+   text-decoration: none;
+}
+
+#doc-wrapper h1 {
+	font-size: 18px;
+	border-bottom: 1px solid #999;
+	margin-bottom: 15px;
+}
+
+#doc-wrapper .note {
+	color: #999;
+	font-size: 12px;
+}
+
+#mainContent .pageContents p.header-gradient {
+	background: -webkit-gradient(linear, left top, left bottom, from(#ABB7C3), to(#97A9B4));
+	background: -moz-linear-gradient(top,  #fff,  #ABB7C3);
+	color: #fff;
+	text-shadow: 1px 1px 1px #666;
+	margin: 0;	
+}
+
+#doc-wrapper h2 {
+	font-size: 15px;
+	margin: 10px 0 5px;
+}
+
+#mainContent .pageContents {
+	padding: 0;
+}
+
+#doc-wrapper {
+	position: relative;
+	margin: 0;
+	padding: 15px;
+	box-shadow: 0px 0px 1px #888;
+	overflow: hidden;
+	background: white;
+}
+
+#doc-wrapper a#home-link {
+	position: absolute;
+	top: 14px;
+	right: 19px;
+}
+
+#doc-wrapper aside {
+   float: left;
+   width: 25%;
+   display: inline;
+   margin: 0 25px 0 0;
+   overflow: hidden;
+}
+
+#doc-wrapper aside form {
+	margin-bottom: 8px;
+}
+
+#doc-wrapper aside nav {
+	background: #A9BAC3;
+	box-shadow: 0px 0px 2px #999;
+	overflow: hidden;
+}
+
+#doc-wrapper nav .note {
+   font-size: 10px;
+   color: #fff;
+}
+
+#doc-wrapper nav a {
+	font-size: 14px;
+	color: #5F6C74;
+}
+
+#doc-wrapper nav a:hover {
+	color: #E7174B;
+}
+
+#doc-wrapper nav ul li {
+	font-size: 14px;
+	list-style-type: none;
+	color: #5F6C74;
+	overflow: hidden;
+}
+
+#doc-wrapper nav ul li.first a {
+	border: none;
+}
+
+#doc-wrapper nav ul li a {
+	display: block;
+	width: 100%;
+	padding: 5px 0 5px 25px;
+	background: url('/themes/cp_themes/default/images/design_sprite.png') 0 3px no-repeat;
+	border-top: 1px solid #D2D7DB;
+	color: white;
+}
+
+#doc-wrapper nav ul ul {
+	margin: 0 0 0 0;
+   display: none;
+}
+
+#doc-wrapper nav ul ul li a {
+	margin-left: -10px;
+	padding: 3px 0 3px 51px;
+	background-image: none;
+	/*border-bottom: 1px solid #D2D7DB;*/
+}
+
+#doc-wrapper nav ul ul li {
+	position: relative;
+	margin-left: 0;
+}
+
+#doc-wrapper nav ul ul li span.template-icon {
+	position: absolute;
+	top: 4px;
+	left: 23px;
+	width: 12px;
+	height: 13px;
+	background: url(/themes/cp_themes/default/images/design_sprite.png) no-repeat -507px -97px;
+}
+
+#doc-wrapper nav ul ul li a:hover {
+	background: #ECF1F4;
+}
+
+#doc-wrapper nav ul ul li.last {
+	border: none;
+}
+
+#doc-wrapper nav ul ul li.last a {
+	border-top: 1px solid #D2D7DB;
+}
+
+#doc-wrapper section#main {
+   float: left;
+   width: 72%;
+   display: inline;
+}
+
+#doc-wrapper section#main .example {
+	background: #ECF1F4;
+	padding: 10px;
+}
+	
+
+#doc-wrapper section#main .example code {
+}
+
+#doc-wrapper .template {
+   display: none;
+}
+
+#doc-wrapper .template.intro {
+   display: block;
+   font-size: 14px;
+}
+
+#doc-wrapper .template.intro h1 {
+	margin-bottom: 0px;
+}
+
+#doc-wrapper .collapsable {
+   display: none;
+   margin: 0 0 20px 0;
+}
+
+#doc-wrapper .collapsable-handle {
+	cursor: pointer;
+	position: relative;
+	padding-left: 15px;
+}
+
+#doc-wrapper .collapsable-handle span {
+	position: absolute;
+	top: 3px;
+	left: 0px;
+	font-size: 9px;
+}
+
+#doc-wrapper div.comment {
+	margin-bottom: 10px;
+	border: 1px solid #999;
+	padding-bottom: 10px;
+}
+
+#doc-wrapper div.comment .tag {
+   padding: 5px;
+   /*background: #EEEEEE;*/
+   font-size: 13px;
+}
+
+#doc-wrapper div.comment ul li {
+	list-style-type: square;
+	list-style-position: inside;
+}
+
+#doc-wrapper div.comment p.note {
+	margin: 10px 5px 0px;
+	color: #333;
+	font-size: 14px;
+}
+
+#doc-wrapper div.comment h3 {
+	font-size: 14px;
+	margin: 10px 5px 5px;
+}
+
+#doc-wrapper div.comment ul {
+   margin: 5px 0 5px 10px;
+}
+
+
+#doc-wrapper div.comment ul li {
+	font-size: 13px;
+	margin-bottom: 5px;
+}
+
+
+#doc-wrapper div.comment span.note {
+	font-size: 12px;
+	color: #666;
+	font-style: italic;
+}
+
+#doc-wrapper div.comment div.collapsable.tags {
+	border: none;
+}
+
+
+
