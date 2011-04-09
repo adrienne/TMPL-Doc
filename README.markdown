@@ -1,4 +1,4 @@
-# TMPL Doc #
+# TMPL Doc (BETA) #
 
 A template documentor for ExpressionEngine 2
 
@@ -12,3 +12,8 @@ A template documentor for ExpressionEngine 2
 ## Usage
 
 See Module.
+
+## Issues
+
+Please log any issues or problems here: https://github.com/themusicman/TMPL-Doc/issues
+
