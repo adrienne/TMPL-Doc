@@ -47,11 +47,9 @@ $(function(){
    });
    
    $('form#sites-form select').change(function() {
-      if ($(this).val() !== '' && $(this).val() !== 'Select One')
-      {
+      if ($(this).val() !== '' && $(this).val() !== 'Select One') {
          $('form#sites-form').submit();
       }
-      
    });
 		
 });

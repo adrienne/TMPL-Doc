@@ -13,11 +13,11 @@ A template documentor for ExpressionEngine 2
 
 * Comment associated with a tag (needs the # signs):  
 
-		{!#--
+		{!--#
 			Displays the currently viewed news article.
 			@tag {exp:channel:entries} 
 			@param channel channel that holds the news articles
-		--#}
+		#--}
 		{exp:channel:entries channel="news" limit="1"} 
 			{title}
 		{/exp:channel:entries}

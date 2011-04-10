@@ -73,7 +73,7 @@
 			<p class="note">Comment associated with a tag (needs the # signs):</p>
 			<div class="example">
 				<code>
-					{!#--
+					{!--#
 					<br />
 					&nbsp;&nbsp;&nbsp;&nbsp;Displays the currently viewed news article.
 					<br /><br />
@@ -81,7 +81,7 @@
 					<br /><br />
 					&nbsp;&nbsp;&nbsp;&nbsp;@param url channel that holds the news articles
 					<br />
-					--#}
+					#--}
 					<br />
 					{exp:channel:entries channel="news" limit="1"} 
 					<br />
