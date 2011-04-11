@@ -40,7 +40,7 @@ class Template_Parser extends Template_Parser_Core {
 		
 		$comments = array();
 		
-		if (preg_match_all('/{!--#(.*?)#--}\n.?{(.*?)}/is', $source, $comments))
+		if (preg_match_all('/{!--#(.*)#--}\n.?{(.*)}/Uis', $source, $comments))
 		{	
 			foreach ($comments[1] as $index => $comment) 
 			{

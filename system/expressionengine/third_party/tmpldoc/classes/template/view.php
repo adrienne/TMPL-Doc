@@ -30,7 +30,7 @@ class Template_View extends View_Core {
 
 }
 
-class View extends View_Core {}
+//class View extends View_Core {}
 
 /**
  * Acts as an object wrapper for HTML pages with embedded PHP, called "views".
@@ -134,9 +134,9 @@ class View_Core {
 		{
 			return $this->_data[$key];
 		}
-		elseif (isset(View::$_global_data[$key]))
+		elseif (isset(View_Core::$_global_data[$key]))
 		{
-			return View::$_global_data[$key];
+			return View_Core::$_global_data[$key];
 		}
 		else
 		{
@@ -241,12 +241,12 @@ class View_Core {
 		{
 			foreach ($key as $key2 => $value)
 			{
-				View::$_global_data[$key2] = $value;
+				View_Core::$_global_data[$key2] = $value;
 			}
 		}
 		else
 		{
-			View::$_global_data[$key] = $value;
+			View_Core::$_global_data[$key] = $value;
 		}
 
 		return $this;
@@ -283,7 +283,7 @@ class View_Core {
 	 */
 	public function bind_global($key, & $value)
 	{
-		View::$_global_data[$key] =& $value;
+		View_Core::$_global_data[$key] =& $value;
 
 		return $this;
 	}
@@ -312,9 +312,9 @@ class View_Core {
 
 		// Combine global and local data. Global variables with the same name
 		// will be overwritten by local variables.
-		$data = array_merge(View::$_global_data, $this->_data);
+		$data = array_merge(View_Core::$_global_data, $this->_data);
 
-		return View::capture($this->_file, $data);
+		return View_Core::capture($this->_file, $data);
 	}
 
 } // End View
