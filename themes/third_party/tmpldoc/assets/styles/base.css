@@ -21,7 +21,7 @@ body {
 
 #mainContent .pageContents p.header-gradient {
 	background: -webkit-gradient(linear, left top, left bottom, from(#ABB7C3), to(#97A9B4));
-	background: -moz-linear-gradient(top,  #fff,  #ABB7C3);
+	background: -moz-linear-gradient(top,  #ABB7C3,  #97A9B4);
 	color: #fff;
 	text-shadow: 1px 1px 1px #666;
 	margin: 0;	
@@ -200,8 +200,12 @@ body {
 }
 
 #doc-wrapper div.comment ul li {
-	list-style-type: square;
-	list-style-position: inside;
+     list-style-position: inside;
+     list-style-type: square;
+}
+
+#doc-wrapper div.comment ul li {
+     
 }
 
 #doc-wrapper div.comment p.note {

@@ -137,7 +137,7 @@ class Template_Comment_Parser extends Template_Parser_Core {
 	 **/
 	public function _add_comment() 
 	{
-		$this->template_comment->comment = trim($this->buffer->as_string());
+		$this->template_comment->comment = nl2br(htmlentities(trim($this->buffer->as_string())));
 		
 		$this->buffer->reset();
 	}

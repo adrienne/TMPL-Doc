@@ -2,6 +2,8 @@
 
 class Template_Source {
 	
+	protected static $ignored_files = array('.DS_Store');
+	
 	/**
 	 * factory
 	 *
@@ -45,7 +47,7 @@ class Template_Source {
 		
 		foreach(new DirectoryIterator($template_dir) as $dir) 
 		{      
-			if ($dir->isDir() AND ! $dir->isDot())
+			if ($dir->isDir() AND !$dir->isDot())
 			{
 				$template_group_folder = $dir->getFilename();
 				
@@ -55,8 +57,8 @@ class Template_Source {
 							
 				foreach(new DirectoryIterator($template_dir.'/'.$template_group_folder.'/') as $file) 
 				{
-					if (!$file->isDir() AND ! $file->isDot())
-					{
+					if (!$file->isDir() AND !$file->isDot() AND !in_array($file->getBasename(), self::$ignored_files))
+					{	
 						$source = Template_Source::factory('file', $file->getPathName());
 
 						$file_name = $file->getFileName();

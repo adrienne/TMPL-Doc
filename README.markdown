@@ -24,10 +24,10 @@ A template documentor for ExpressionEngine 2
 
 * Comment not associated with a tag:  
 
-		{!--
+		{!--:
 			This template displays the currently viewed news article.
 			@todo Debug routing conditionals
-		--}
+		:--}
 	
 * User Defined Globals (prefix global name with gbl):  
 

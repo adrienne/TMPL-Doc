@@ -56,7 +56,7 @@ class Template_Parser extends Template_Parser_Core {
 		}
 		
 		//pass through again and grab the regular comments
-		if (preg_match_all('/{!--(.*?)--}/is', $source, $comments))
+		if (preg_match_all('/{!--:(.*?):--}/is', $source, $comments))
 		{	
 			foreach ($comments[1] as $index => $comment) 
 			{

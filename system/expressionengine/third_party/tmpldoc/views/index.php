@@ -95,11 +95,11 @@
 			<p class="note">Comment not associated with a tag:</p>
 			<div class="example">
 				<code>
-					{!--
+					{!--:
 					<br />
 					&nbsp;&nbsp;&nbsp;&nbsp;This template displays the currently viewed news article. <br />
 					&nbsp;&nbsp;&nbsp;&nbsp;@todo Debug routing conditionals <br />
-					--}
+					:--}
 				</code>
 			</div>
 			<br />
@@ -177,8 +177,7 @@
 								<ul>
 								<?php foreach($comment->tags('@param') as $tag): ?>
 
-										<li >
-											<p>
+										<li>
 												<?php if ($tag->param): ?>
 													<strong><?php echo $tag->param ?></strong> 
 												<?php endif; ?>
@@ -190,8 +189,6 @@
 												<?php if ($tag->comment): ?>
 												<span class="note">- <?php echo $tag->comment ?> </span>
 												<?php endif; ?>
-											</p>
-
 										</li>
 
 								<?php endforeach; ?>
@@ -207,7 +204,6 @@
 								<?php foreach($comment->tags('@tag') as $tag): ?>
 
 										<li>
-											<p>
 												<?php if ($tag->param): ?>
 													<?php echo $tag->param ?>
 												<?php endif; ?>
@@ -215,7 +211,6 @@
 												<?php if ($tag->comment): ?>
 												<span class="note">- <?php echo $tag->comment ?> </span>
 												<?php endif; ?>
-											</p>
 										</li>
 
 								<?php endforeach; ?>
@@ -231,8 +226,7 @@
 								<ul>
 								<?php foreach($comment->tags('@todo') as $tag): ?>
 
-										<li >
-											<p>
+										<li>
 												<?php if ($tag->param): ?>
 													<strong><?php echo $tag->param ?></strong> 
 												<?php endif; ?>
@@ -240,7 +234,6 @@
 												<?php if ($tag->comment): ?>
 												<span class="note"><?php echo $tag->comment ?> </span>
 												<?php endif; ?>
-											</p>
 										</li>
 
 								<?php endforeach; ?>
@@ -256,8 +249,7 @@
 								<ul>
 								<?php foreach($comment->tags('@unknown') as $tag): ?>
 
-										<li >
-											<p>
+										<li>
 												<?php if ($tag->param): ?>
 													<strong><?php echo $tag->param ?></strong> 
 												<?php endif; ?>
@@ -265,7 +257,6 @@
 												<?php if ($tag->comment): ?>
 												<span class="note"><?php echo $tag->comment ?> </span>
 												<?php endif; ?>
-											</p>
 										</li>
 
 								<?php endforeach; ?>
